@@ -9,7 +9,7 @@ Pinterest-ish
 # WIREFRAMES
 
 # ERD
-<iframe width="560" height="315" src='https://dbdiagram.io/embed/60401cf8fcdcb6230b227862'> </iframe>
+https://dbdiagram.io/d/60401cf8fcdcb6230b227862
 
 # DEPLOYED APP
 
