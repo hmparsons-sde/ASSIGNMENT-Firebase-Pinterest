@@ -1,0 +1,26 @@
+{
+  "-MUuao2lynNljpuXajqR" : {
+    "cover_photo" : "https://firebasestorage.googleapis.com/v0/b/almost-pinterest.appspot.com/o/bouquet.jpg",
+    "firebaseKey" : "-MUuao2lynNljpuXajqR",
+    "pin-number" : 4,
+    "title" : "Flowers for Wedding"
+  },
+  "-MUucHzh6tmJm42qr3bV" : {
+    "cover_photo" : "https://firebasestorage.googleapis.com/v0/b/almost-pinterest.appspot.com/o/yoga-pin.jpg",
+    "firebaseKey" : "-MUucHzh6tmJm42qr3bV",
+    "pin-number" : 2,
+    "title" : "Spring Yoga Ideas"
+  },
+  "-MUufyyXlovbYsLhDnu9" : {
+    "cover_photo" : "https://firebasestorage.googleapis.com/v0/b/almost-pinterest.appspot.com/o/crossstitch.jpg",
+    "firebaseKey" : "-MUufyyXlovbYsLhDnu9",
+    "pin-number" : 6,
+    "title" : "Cross-stitch Gift Ideas"
+  },
+  "-MUuhLFFve15mF9jVIw9" : {
+    "cover_photo" : "https://firebasestorage.googleapis.com/v0/b/almost-pinterest.appspot.com/o/pollinator.jpg",
+    "firebaseKey" : "-MUuhLFFve15mF9jVIw9",
+    "pin-number" : 3,
+    "title" : "Pollinator Garden Designs"
+  }
+}
