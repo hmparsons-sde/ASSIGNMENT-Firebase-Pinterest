@@ -7,8 +7,8 @@ Pinterest-ish
 - Demonstrate timely command of Vanilla JS, DOM Manipulation, Bootstrap, CSS, and HTML5.
 
 # WIREFRAMES
-- Canva: https://www.canva.com/design/DAEX0U2DfYs/2HNIfaFC5XRzXicBulAPSQ/
-- Figma: https://www.figma.com/file/nH5PEa0175zEBpd5NLSIKm/Untitled
+- Canva: https://bit.ly/3uXhqkm
+- Figma: https://bit.ly/3rgDgNO
 
 # ERD
 https://dbdiagram.io/d/60401cf8fcdcb6230b227862
