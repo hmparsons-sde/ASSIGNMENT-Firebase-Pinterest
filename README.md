@@ -6,6 +6,10 @@ Pinterest-ish
 - Benchmark progress working with modules and bundled webpack.
 - Demonstrate timely command of Vanilla JS, DOM Manipulation, Bootstrap, CSS, and HTML5.
 
+# COLOR PALETTE
+
+<img width="860" alt="palette" src="https://user-images.githubusercontent.com/67122062/110022304-5df17580-7cf1-11eb-88bc-1633cf025d43.png">
+
 # WIREFRAMES
 - Canva: https://bit.ly/3uXhqkm
 - Figma: https://bit.ly/3rgDgNO
