@@ -1,8 +1,7 @@
 const navBar = () => {
   document.querySelector('#navigation').innerHTML = `
-    <nav class='navbar fixed-top navbar-expand-lg mb-4'>
+    <nav class='navbar fixed-top navbar-expand-lg mb-4 bg-white'>
         <a id='logo' class='navbar-brand title' href='#'><img src='https://seeklogo.com/images/P/pinterest-logo-8561DDA2E1-seeklogo.com.png' class="img-thumbnail"></a>
-        <div id='logout-button'></div>
         <button
           class='navbar-toggler'
           type='button'
@@ -33,6 +32,7 @@ const navBar = () => {
             />
             </li>
           </ul>
+          <div id='logout-button'></div>
         </div>
       </nav>
     `;
