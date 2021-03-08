@@ -1,26 +1,30 @@
 {
   "-MUuao2lynNljpuXajqR" : {
-    "cover_photo" : "https://firebasestorage.googleapis.com/v0/b/almost-pinterest.appspot.com/o/bouquet.jpg",
+    "cover_photo" : "https://www.cavinelizabeth.com/wp-content/uploads/2018/05/Romantic-Colorful-Floral-Arrangements-on-Film-9.jpg",
     "firebaseKey" : "-MUuao2lynNljpuXajqR",
-    "pin-number" : 4,
-    "title" : "Flowers for Wedding"
+    "pin_count" : 4,
+    "title" : "Flowers for Wedding",
+    "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
   "-MUucHzh6tmJm42qr3bV" : {
-    "cover_photo" : "https://firebasestorage.googleapis.com/v0/b/almost-pinterest.appspot.com/o/yoga-pin.jpg",
+    "cover_photo" : "https://images.squarespace-cdn.com/content/v1/59df4efaa9db094213643995/1523796877248-QWKX52R8A60408PCDONU/ke17ZwdGBToddI8pDm48kAI66EAvvkYL6hKgpg4-WCUUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8GRo6ASst2s6pLvNAu_PZdJxyBL1WEiDZsHIYNQ3ma7AKzodD8ZnUF1oseF0VvOzdPpZcjzy4Qx59D4K7zyTNo0/The+Perfect+Restorative+Yoga+Class+for+Spring+%7C+30+minute+restorative+yoga+with+props+%7C+ChriskaYoga?format=750w",
     "firebaseKey" : "-MUucHzh6tmJm42qr3bV",
-    "pin-number" : 2,
-    "title" : "Spring Yoga Ideas"
+    "pin_count" : 2,
+    "title" : "Spring Yoga Ideas",
+    "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
   "-MUufyyXlovbYsLhDnu9" : {
-    "cover_photo" : "https://firebasestorage.googleapis.com/v0/b/almost-pinterest.appspot.com/o/crossstitch.jpg",
+    "cover_photo" : "https://i.etsystatic.com/10174595/r/il/f869ce/2156691775/il_794xN.2156691775_b2io.jpg",
     "firebaseKey" : "-MUufyyXlovbYsLhDnu9",
-    "pin-number" : 6,
-    "title" : "Cross-stitch Gift Ideas"
+    "pin_count" : 6,
+    "title" : "Cross-stitch Gift Ideas",
+    "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
   "-MUuhLFFve15mF9jVIw9" : {
-    "cover_photo" : "https://firebasestorage.googleapis.com/v0/b/almost-pinterest.appspot.com/o/pollinator.jpg",
+    "cover_photo" : "https://i1.wp.com/savvygardening.com/wp-content/uploads/2020/03/pollinator-palace-pin.jpg?w=550&ssl=1",
     "firebaseKey" : "-MUuhLFFve15mF9jVIw9",
-    "pin-number" : 3,
-    "title" : "Pollinator Garden Designs"
+    "pin_count" : 3,
+    "title" : "Pollinator Garden Designs",
+    "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   }
 }
