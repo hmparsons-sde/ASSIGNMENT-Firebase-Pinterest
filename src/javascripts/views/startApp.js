@@ -4,9 +4,11 @@ import domBuilder from '../components/domBuilder';
 import navBar from '../components/navBar';
 import { getBoards } from '../helpers/data/boardData';
 import navigationEvents from '../events/navigationEvents';
+import domEvents from '../events/domEvents';
 
 const startApp = (userObject) => {
-  domBuilder(); // BUILD THAT DOM
+  domBuilder();
+  domEvents(userObject.uid);// BUILD THAT DOM
   navBar();
   logoutButton();
   navigationEvents(userObject.uid);

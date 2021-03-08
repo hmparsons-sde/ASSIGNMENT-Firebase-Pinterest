@@ -15,7 +15,7 @@ const navBar = () => {
         </button>
         <div class='collapse navbar-collapse' id='navbarNav'>
           <ul class='navbar-nav mr-auto text-dark'>
-            <li class='nav-item active'>
+            <li class='nav-item text-dark'>
               <a class='nav-link' href='#' id='all-boards'>
                 All Boards <span class='sr-only'>(current)</span>
               </a>
