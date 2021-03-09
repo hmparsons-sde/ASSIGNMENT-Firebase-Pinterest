@@ -17,8 +17,11 @@ const domEvents = (uid) => {
   document.querySelector('body').addEventListener('click', (e) => {
     // DELETE PIN
     if (e.target.id.includes('delete-pin')) {
-      const firebaseKey = e.target.id.split('--')[1];
-      deletePin(firebaseKey, uid).then((pinsArray) => showPins(pinsArray));
+      // eslint-disable-next-line no-alert
+      if (window.confirm('Are you sure?')) {
+        const firebaseKey = e.target.id.split('--')[1];
+        deletePin(firebaseKey, uid).then((pinsArray) => showPins(pinsArray));
+      }
     }
     // TOGGLE CREATE PIN FORM
     if (e.target.id.includes('add-pin-btn')) {
@@ -63,8 +66,11 @@ const domEvents = (uid) => {
     }
     // DELETE A BOARD & ALL OF ITS PINS
     if (e.target.id.includes('delete-board')) {
-      const firebaseKey = e.target.id.split('--')[1];
-      deleteBoardsPins(firebaseKey, uid).then((boardsArray) => showBoards(boardsArray));
+      // eslint-disable-next-line no-alert
+      if (window.confirm('Are you sure?')) {
+        const firebaseKey = e.target.id.split('--')[1];
+        deleteBoardsPins(firebaseKey, uid).then((boardsArray) => showBoards(boardsArray));
+      }
     }
     // TOGGLE CREATE BOARD FORM
     if (e.target.id.includes('add-board-btn')) {

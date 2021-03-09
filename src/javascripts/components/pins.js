@@ -8,7 +8,7 @@ const showPins = (array) => {
         <img src=${item.cover_photo} class="rounded mx-auto d-block mt-4" alt=${item.title}>
         <div class="card-body">
         <h5 class="card-title"><a href="${item.url}" class="card-link mt-2">${item.title}</a></h5>
-        <p class="card-text bold"><span class="badge badge-danger">${item.favorite}</span></p>
+        <p class="card-text bold"><span class="badge badge-danger">${item.favorite ? 'Favorite' : ''}</span></p>
         <button class="btn btn-danger" id="edit-pin--${item.firebaseKey}">Edit Pin</button>
         <button class="btn btn-danger" id="delete-pin--${item.firebaseKey}">Delete Pin</button>
         </div>
