@@ -1,9 +1,7 @@
 import selectBoard from './selectBoard';
 
 const addPinForm = () => {
-  document.querySelector('#user-content').innerHTML = '';
-  document.querySelector('#add-button').innerHTML = '';
-  document.querySelector('#form-container').innerHTML = `
+  document.querySelector('#modal-body').innerHTML = `
     <form id="submit-pin-form" class="mb-4">
       <div class="form-group">
         <input type="text" class="form-control" id="title" aria-describedby="pinTitle" placeholder="Enter Pin Title" required>
@@ -20,7 +18,7 @@ const addPinForm = () => {
         <input type="checkbox" class="form-check-input" id="favorite">
         <label class="form-check-label" for="favorite">Add to Favorites?</label>
       </div>
-      <button type="submit" id="submit-pin" class="btn btn-primary">Create Pin</button>
+      <button type="submit" id="submit-pin" class="btn btn-danger mt-3">Create Pin</button>
     </form>`;
 
   selectBoard();

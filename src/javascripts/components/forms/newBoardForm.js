@@ -1,8 +1,5 @@
 const addBoardForm = () => {
-  console.warn('This was clicked');
-  document.querySelector('#user-content').innerHTML = '';
-  document.querySelector('#add-button').innerHTML = '';
-  document.querySelector('#form-container').innerHTML = `
+  document.querySelector('#modal-body').innerHTML = `
     <form id="submit-board-form" class="mb-4">
       <div class="form-group">
         <input type="text" class="form-control" id="title" aria-describedby="boardTitle" placeholder="Name Your Board" required>
@@ -13,7 +10,11 @@ const addBoardForm = () => {
       <div class="form-group">
         <input type="url" class="form-control" id="article" placeholder="Link An Article" required>
       </div>
-      <button type="submit" id="submit-board" class="btn btn-danger">Create Board</button>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="favorite">
+        <label class="form-check-label" for="favorite">Add to Favorites?</label>
+      </div>
+      <button type="submit" id="submit-board" class="btn btn-danger mt-3">Create Board</button>
     </form>`;
 };
 
