@@ -1,7 +1,7 @@
 import selectBoard from './selectBoard';
 
 const editPinForm = (pinObject) => {
-  document.querySelector('#modal-body').innerHTML = `
+  document.querySelector('#edit-modal-body').innerHTML = `
     <form id="edit-pin-form" class="mb-4">
       <div class="form-group">
         <input type="text" class="form-control" id="title" aria-describedby="pinTitle" placeholder="Enter Pin Title" value="${pinObject.title}" required>
@@ -18,7 +18,7 @@ const editPinForm = (pinObject) => {
         <input type="checkbox" class="form-check-input" id="favorite" ${pinObject.favorite && 'checked'}>
         <label class="form-check-label" for="favorite">Favorite</label>
       </div>
-      <button type="submit" id="update-pin--${pinObject.firebaseKey}" class="btn btn-success">Update Pin</button>
+      <button type="submit" id="update-pin--${pinObject.firebaseKey}" class="btn btn-danger">Update Pin</button>
     </form>`;
 
   selectBoard(pinObject);

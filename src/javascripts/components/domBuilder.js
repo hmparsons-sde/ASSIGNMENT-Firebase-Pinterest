@@ -10,6 +10,7 @@ const domBuilder = () => {
     <div class="col-8">
       <div class="d-flex row pb-5 flex-wrap justify-content-evenly" id="user-content"></div>
       <div id="form-container"></div>
+      <div id="edit-form-container"></div>
     </div>
   </div>
 </div>`;
