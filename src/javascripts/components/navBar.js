@@ -20,16 +20,11 @@ const navBar = () => {
                 All Boards <span class='sr-only'>(current)</span>
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="all-pins">Pins</a>
+            </li>
             <li class='nav-item'>
               <a class='nav-link' href='#' id='favorites'>Favorites</a>
-            </li>
-            <li>
-            <input
-              class='form-control mr-sm-2 ml-3'
-              id='search'
-              placeholder='Search Collections'
-              aria-label='Search'
-            />
             </li>
           </ul>
           <div id='logout-button'></div>
