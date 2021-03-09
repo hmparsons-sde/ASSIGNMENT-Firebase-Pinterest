@@ -18,6 +18,9 @@ Pinterest-ish
 https://dbdiagram.io/d/60401cf8fcdcb6230b227862
 
 # DEPLOYED APP
+pinterest-ish.netlify.app
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2e1de122-1698-4eb3-be2d-df5f703a75a4/deploy-status)](https://app.netlify.com/sites/pinterest-ish/deploys)
 
 # PROJECT BOARD
 https://github.com/hmparsons-sde/ASSIGNMENT-Firebase-Pinterest/projects/1
