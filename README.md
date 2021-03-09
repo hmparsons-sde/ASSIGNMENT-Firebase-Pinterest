@@ -24,9 +24,10 @@ https://github.com/hmparsons-sde/ASSIGNMENT-Firebase-Pinterest/projects/1
 
 # USER STORIES
 - In order to view or manipulate content, the user must login using Google authentication. 
-- The landing page displays all of the user's boards and a navigation bar. From the navigation bar, the user can navigate to their favorites, a search bar with filter function, and return to "All Boards."
+- The landing page displays all of the user's boards and a navigation bar. From the navigation bar, the user can navigate to their favorite boards and pins, a search bar with filter function, and to "All Boards" and "All Pins".
 - When a user clicks on a board's title, they are redirected to a single-board view, which displays all of the pins that the user has saved to the individual board.
 - The user can create new pins and new boards.
+- For each pin, the title is hyperlinked to the associated external article or content.
 - The user can delete a single pin from a board or a single board with all of the pins contained therein.
 - Once a pin is created and assigned, the user can reassign the pin to another board.
 
