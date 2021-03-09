@@ -12,6 +12,7 @@ import formModal from '../components/forms/formModal';
 import editPinForm from '../components/forms/editPinForm';
 import boardInfo from '../components/boardInfo';
 import { boardsAndPins, deleteBoardsPins } from '../helpers/data/boardsAndPins';
+import editFormModal from '../components/forms/editFormModal';
 
 const domEvents = (uid) => {
   document.querySelector('body').addEventListener('click', (e) => {
@@ -46,8 +47,9 @@ const domEvents = (uid) => {
     // TOGGLE EDIT PIN FORM
     if (e.target.id.includes('edit-pin')) {
       const firebaseKey = e.target.id.split('--')[1];
-      formModal('Edit Pin');
+      editFormModal('Edit Pin');
       getSinglePin(firebaseKey).then((pinObject) => editPinForm(pinObject));
+      $('#formModal').modal('toggle');
     }
     // EDIT PINS FORM SUBMIT
     if (e.target.id.includes('update-pin')) {
