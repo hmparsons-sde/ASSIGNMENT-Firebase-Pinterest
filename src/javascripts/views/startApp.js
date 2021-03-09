@@ -9,7 +9,7 @@ import domEvents from '../events/domEvents';
 const startApp = (userObject) => {
   domBuilder();
   domEvents(userObject.uid);// BUILD THAT DOM
-  navBar();
+  navBar(userObject);
   logoutButton();
   navigationEvents(userObject.uid);
   getBoards(userObject.uid).then((boardsArray) => {

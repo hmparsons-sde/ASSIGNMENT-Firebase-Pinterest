@@ -1,18 +1,18 @@
 import { deleteBoard, getSingleBoard } from './boardData';
-import { getBoardPins, getSinglePin } from './pinData';
-
+import { deletePin, getBoardPins } from './pinData';
+// DELETE ALL THE PINS BELONGING TO A SPECIFIED BOARD
 const deleteBoardsPins = (boardId, uid) => new Promise((resolve, reject) => {
-  getSinglePin(boardId).then((boardsPinsArray) => {
-    const deletePins = boardsPinsArray.map((pins) => deletePins(pins.firebaseKey));
+  getBoardPins(boardId).then((boardsPinsArray) => {
+    const deletePins = boardsPinsArray.map((pins) => deletePin(pins.firebaseKey));
     Promise.all(deletePins).then(() => resolve(deleteBoard(boardId, uid)));
   }).catch((error) => reject(error));
 });
-
+// SHOW PINS ASSOCIATED WITH SINGLE BOARD
 const boardsAndPins = (boardId) => new Promise((resolve, reject) => {
-  Promise.all([getSingleBoard(boardId), getBoardPins(boardId)])
-    .then(([boards, pins]) => resolve(
-      { boards, pins }
-    ))
+  const board = getSingleBoard(boardId);
+  const boardPins = getBoardPins(boardId);
+  Promise.all([board, boardPins])
+    .then(([boardResponse, boardPinsResponse]) => resolve({ board: boardResponse, pins: boardPinsResponse }))
     .catch((error) => reject(error));
 });
 

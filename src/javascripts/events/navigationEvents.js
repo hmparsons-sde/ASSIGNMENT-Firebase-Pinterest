@@ -1,8 +1,8 @@
 import { emptyBoards, showBoards } from '../components/boards';
 import { emptyPins, showPins } from '../components/pins';
 import signOut from '../helpers/auth/signOut';
-import getBoards from '../helpers/data/boardData';
-import { getFavoritePins } from '../helpers/data/pinData';
+import { getBoards } from '../helpers/data/boardData';
+import { getFavoritePins, getPins } from '../helpers/data/pinData';
 
 const navigationEvents = (uid) => {
   document.querySelector('#logout-button').addEventListener('click', signOut);
@@ -12,6 +12,15 @@ const navigationEvents = (uid) => {
         showBoards(boardsArray);
       } else {
         emptyBoards();
+      }
+    });
+  });
+  document.querySelector('#all-pins').addEventListener('click', () => {
+    getPins(uid).then((pinsArray) => {
+      if (pinsArray.length) {
+        showPins(pinsArray);
+      } else {
+        emptyPins();
       }
     });
   });
