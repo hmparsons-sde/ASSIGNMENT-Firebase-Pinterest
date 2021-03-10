@@ -5,6 +5,7 @@
     "firebaseKey" : "-MUukncsdQoioPYgFgRl",
     "title" : "Soft Pastel Wedding Flowers | Allenbrooke Farms",
     "favorite": true,
+    "public": true,
     "url" : "http://www.wildflowersllc.com/soft-pastel-wedding-flowers/",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -14,6 +15,7 @@
     "firebaseKey" : "-MUumLnvqGydpLFeCkj4",
     "title" : "Fall & Winter Inspired Color Palettes",
     "favorite": false,
+    "public": false,
     "url" : "https://www.elegantweddinginvites.com/wedding-blog/wedding-bouquets-inspired-wedding-colors/",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -23,6 +25,7 @@
     "firebaseKey" : "-MUunOQduWXBxxYQPP7N",
     "title" : "Rustic Wedding Bouquets",
     "favorite": false,
+    "public": true,
     "url" : "http://www.simpleelegancebylaura.com/blog/fall-wedding-inspiration/",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -32,6 +35,7 @@
     "firebaseKey" : "-MUuo67WN5sp70b9Vwpk",
     "title" : "Silk Wedding Bouquet | Handmade Teal Bouquet",
     "favorite": false,
+    "public": false,
     "url" : "https://www.etsy.com/listing/154198758/silk-wedding-bouquet-teal-bouquet-real",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -41,6 +45,7 @@
     "firebaseKey" : "-MUuqPutuvqateIO_iAf",
     "title" : "Yoga Wheel: Beginner's Guide",
     "favorite": true,
+    "public": false,
     "url" : "https://365fitnessbeauty.com/yoga-wheel-guide-beginners/",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -50,6 +55,7 @@
     "firebaseKey" : "-MUurlevjsINzjDIF2Bw",
     "title" : "The Perfect Restorative Yoga for Spring — ChriskaYoga",
     "favorite": true,
+    "public": true,
     "url" : "https://www.chriskayoga.com/blog/restorative-yoga-revitalize",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -59,6 +65,7 @@
     "firebaseKey" : "-MUuu88c97DGys3wdEjj",
     "title" : "'Mother Nature' Embroidery Pattern",
     "favorite": false,
+    "public": false,
     "url" : "https://kitschystitcher.com/products/mother-nature-embroidery-pdf-pattern",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -68,6 +75,7 @@
     "firebaseKey" : "-MUuuziV2v_eYfi_V9Ku",
     "title" : "Princess Bride Cross Stitch Pattern",
     "favorite": true,
+    "public": true,
     "url" : "https://www.etsy.com/HelensCrossing/listing/857623550/im-not-a-witch-im-your-wife-funny-cross?utm_campaign=Share&utm_medium=social_organic&utm_source=DSMT2&utm_term=so.smt&share_time=1600263601000",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -77,6 +85,7 @@
     "firebaseKey" : "-MUuvneA9pcHHE7RgbEO",
     "title" : "Funny Cross Stitch PDF Pattern",
     "favorite": false,
+    "public": false,
     "url" : "https://www.etsy.com/listing/864745308/funny-cross-stitch-pattern-if-you-cant",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -86,6 +95,7 @@
     "firebaseKey" : "-MUuwVr1aUjb4gscfGc9",
     "title" : "Don't Be A Racist PDF Pattern",
     "favorite": true,
+    "public": true,
     "url" : "https://www.etsy.com/SoEasyPattern/listing/826441747/cross-stitch-pattern-wash-your-hands-and?utm_campaign=Share&utm_medium=social_organic&utm_source=DSMT2&utm_term=so.smt&share_time=1592512990000",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -95,6 +105,7 @@
     "firebaseKey" : "-MUuxgGMvSp-GkEt_aw4",
     "title" : "Spicy Disaster PDF Pattern - Helens Crossing",
     "favorite": false,
+    "public": false,
     "url" : "https://www.etsy.com/HelensCrossing/listing/740149715/i-am-not-a-hot-mess-im-a-spicy-disaster?utm_campaign=Share&utm_medium=social_organic&utm_source=DSMT2&utm_term=so.smt&share_time=1579552210000",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -104,6 +115,7 @@
     "firebaseKey" : "-MUuyE-PqHwFxWISMOk7",
     "title" : "Aliton Embroidery - Patience Cross Stitch Pattern",
     "favorite": false,
+    "public": false,
     "url" : "https://www.etsy.com/listing/749710248/warning-this-is-proof-i-have-the?utm_medium=SellerListingTools&utm_campaign=Share&utm_source=Pinterest&share_time=1591103039000&utm_term=so.slt",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -113,6 +125,7 @@
     "firebaseKey" : "-MUuzQYyeSlfpAMC4Gl-",
     "title" : "Natural Attraction: How to Entice Pollinators to Your Garden",
     "favorite": true,
+    "public": true,
     "url" : "https://southernlivingplants.com/plan-your-garden/natural-attraction/",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -122,6 +135,7 @@
     "firebaseKey" : "-MUv-H08fiFxm0toCkI2",
     "title" : "Garden Gate Magazine | Butterfly Garden",
     "favorite": false,
+    "public": false,
     "url" : "https://www.gardengatemagazine.com/newsletter/2012/09/18/create-a-butterfly-friendly-garden/",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   },
@@ -131,6 +145,7 @@
     "firebaseKey" : "-MUv09f7SdH1N3omSBqQ",
     "title" : "Zone 7 Planting Guide",
     "favorite": true,
+    "public": true,
     "url" : "https://www.dogwoodsanddandelions.com/vegetable-planting-chart/",
     "uid": "aTjNG2oY4choBMsCzS3ZWCkJ3HE3"
   }

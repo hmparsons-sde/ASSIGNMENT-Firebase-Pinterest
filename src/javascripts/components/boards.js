@@ -7,10 +7,10 @@ const showBoards = (array) => {
     document.querySelector('#user-content').innerHTML += `
     <div class="card p-3 m-3" style="width: 20rem">
       <div class="card-body">
-      <img src='${item.cover_photo}'></img>
+      <img src='${item.cover_photo}' id='card-img'></img>
         <a href="#" id="title"><h5 id="board-title--${item.firebaseKey}" class="card-title mt-2 text-center">${item.title}</h5></a>
         <div class="text-center">
-        <button class="btn btn-danger" id="delete-board--${item.firebaseKey}">Delete Board</button>
+        <button class="btn btn-light" id="delete-board--${item.firebaseKey}"><i class='fas fa-trash-alt' style='font-size:36px'></i></button>
         </div>
         </div>
     </div>`;

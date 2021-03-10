@@ -19,8 +19,8 @@ h2 {
   height: 100px;
 }
 
-nav {
-  color: black;
+.nav-link {
+  color: #6f7379;
 }
 
 .search-container {
@@ -33,6 +33,10 @@ img {
   align-content: center;
   height: 350px;
   width: 250px;
+}
+
+i {
+  color: #6f7379;
 }
 
 .card {
