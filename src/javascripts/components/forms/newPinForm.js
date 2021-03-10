@@ -1,5 +1,5 @@
 import selectBoard from './selectBoard';
-
+// FORM PRINTS TO DISMISSABLE MODAL
 const addPinForm = () => {
   document.querySelector('#modal-body').innerHTML = `
     <form id="submit-pin-form" class="mb-4">

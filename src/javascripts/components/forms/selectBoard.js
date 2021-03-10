@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import { getBoards } from '../../helpers/data/boardData';
-
+// PRINTS DROP-DOWN SELECT MENU TO EACH FORM MODAL
 const selectBoard = (pinObject = {}) => {
   let domString = `
         <select class="form-control" id="board" required>

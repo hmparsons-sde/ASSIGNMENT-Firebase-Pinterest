@@ -27,6 +27,11 @@ const navBar = () => {
               <a class='nav-link' href='#' id='favorites'>Favorites</a>
             </li>
           </ul>
+        <div class="search-container input-group-lg">
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <input id="search" class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" style="width: 700px;">
+        </form>
+        </div>
           <div id='logout-button'></div>
         </div>
       </nav>

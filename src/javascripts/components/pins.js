@@ -9,7 +9,7 @@ const showPins = (array) => {
         <div class="card-body">
         <h5 class="card-title"><a href="${pin.url}" class="card-link mt-2">${pin.title}</a></h5>
         <p class="card-text bold"><span class="badge badge-danger">${pin.favorite ? 'Favorite' : ''}</span></p>
-        <button class="btn btn-danger" id="edit-pin--${pin.firebaseKey}" data-toggle="modal" data-target="#edit-form-modal">Edit</button>
+        <button class="btn btn-danger" id="edit-pin--${pin.firebaseKey}" data-toggle="modal" data-target="#edit-form-modal">Edit Pin</button>
         <button class="btn btn-danger" id="delete-pin--${pin.firebaseKey}">Delete Pin</button>
         </div>
         </div>
