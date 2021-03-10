@@ -3,7 +3,7 @@ const domBuilder = () => {
   <div id='main-container' style='padding-top: 50px;'>
     <div class='row'>
       <div class="col-4">
-       <img src="https://user-images.githubusercontent.com/67122062/110191029-26b3bf00-7dec-11eb-87ab-fca63d5b4b5b.png">
+       <img src="https://user-images.githubusercontent.com/67122062/110191029-26b3bf00-7dec-11eb-87ab-fca63d5b4b5b.png" id="#profile-img">
         <hr class="d-sm-none">
         <div id="add-button"></div>
       </div>

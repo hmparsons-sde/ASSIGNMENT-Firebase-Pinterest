@@ -32,6 +32,10 @@ const navBar = () => {
           <input id="search" class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" style="width: 700px;">
         </form>
         </div>
+        <div class="icon-container mr-3 ml-3">
+        <i class='fas fa-bell p-2' style='font-size:24px'></i>
+        <i class='fas fa-comment p-3' style='font-size:24px'></i>
+        </div>
           <div id='logout-button'></div>
         </div>
       </nav>

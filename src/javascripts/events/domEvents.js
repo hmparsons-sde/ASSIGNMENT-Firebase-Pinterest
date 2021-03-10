@@ -13,6 +13,7 @@ import editPinForm from '../components/forms/editPinForm';
 import boardInfo from '../components/boardInfo';
 import { boardsAndPins, deleteBoardsPins } from '../helpers/data/boardsAndPins';
 import editFormModal from '../components/forms/editFormModal';
+// eslint-disable-next-line import/no-cycle
 import logoutButton from '../components/buttons/logoutButton';
 
 const domEvents = (uid) => {
