@@ -23,6 +23,12 @@ nav {
   color: black;
 }
 
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
 img {
   align-content: center;
   height: 350px;
@@ -35,6 +41,10 @@ img {
 
 .card-body {
   padding: 20px;
+}
+
+.card-link {
+  color: black;
 }
 
 h5 {

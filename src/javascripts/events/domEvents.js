@@ -13,6 +13,7 @@ import editPinForm from '../components/forms/editPinForm';
 import boardInfo from '../components/boardInfo';
 import { boardsAndPins, deleteBoardsPins } from '../helpers/data/boardsAndPins';
 import editFormModal from '../components/forms/editFormModal';
+import logoutButton from '../components/buttons/logoutButton';
 
 const domEvents = (uid) => {
   document.querySelector('body').addEventListener('click', (e) => {
@@ -99,6 +100,9 @@ const domEvents = (uid) => {
         showPins(boardPinsObject.pins);
         boardInfo(boardPinsObject.board);
       });
+    }
+    if (e.target.id === 'logout-button') {
+      logoutButton();
     }
   });
 };

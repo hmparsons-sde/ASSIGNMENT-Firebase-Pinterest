@@ -17,5 +17,5 @@ const addBoardForm = () => {
       <button type="submit" id="submit-board" class="btn btn-danger mt-3">Create Board</button>
     </form>`;
 };
-
+// FORM PRINTS TO DISMISSABLE MODAL WITHOUT CLEARING THE CURRENT PAGE
 export default addBoardForm;

@@ -23,5 +23,5 @@ const editPinForm = (pinObject) => {
 
   selectBoard(pinObject);
 };
-
+// IN ORDER TO SUCCESSFULLY EDIT A PIN, THIS FORM PRINTS TO A SEPARATE MODAL
 export default editPinForm;
