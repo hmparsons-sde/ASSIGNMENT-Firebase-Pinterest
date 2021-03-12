@@ -18,7 +18,7 @@ const editPinForm = (pinObject) => {
         <input type="checkbox" class="form-check-input" id="favorite" ${pinObject.favorite && 'checked'}>
         <label class="form-check-label" for="favorite">Favorite</label>
         <br>
-        <input type="checkbox" class="form-check-input" id="public" ${pinObject.public && 'checked'}>
+        <input type="checkbox" class="form-check-input" id="public-check" ${pinObject.public && 'checked'}>
         <label class="form-check-label" for="public">Public</label>
       </div>
       <button type="submit" id="update-pin--${pinObject.firebaseKey}" class="btn btn-danger">Update Pin</button>

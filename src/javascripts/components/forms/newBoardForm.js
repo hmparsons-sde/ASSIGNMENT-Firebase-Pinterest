@@ -10,8 +10,6 @@ const addBoardForm = () => {
       <div class="form-check">
       <input type="checkbox" class="form-check-input" id="favorite">
       <label class="form-check-label" for="favorite">Add to Favorites?</label><br>
-      <input type="checkbox" class="form-check-input" id="public">
-      <label class="form-check-label" for="public">Make Public?</label>
       </div>
       <button type="submit" id="submit-board" class="btn btn-danger mt-3">Create Board</button>
     </form>`;

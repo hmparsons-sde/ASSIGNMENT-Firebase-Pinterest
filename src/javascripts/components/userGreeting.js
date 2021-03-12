@@ -1,7 +1,7 @@
 const userGreeting = (userObject) => {
-  document.querySelector('#header').innerHTML = `<div class="container d-flex justify-content-center align-items-center header">
-                                                  <img class="profile-pic" src="${userObject.photoURL}"> 
-                                                  <h1 class="user-name">${userObject.displayName}</h1>                                                                            
+  document.querySelector('#user-greeting').innerHTML = `<div class="container d-flex justify-content-center align-items-center">
+                                                  <img class="rounded-circle" id="profile-pic" src="${userObject.photoURL}" alt="user profile picture"> 
+                                                  <br>                                                                   
                                                   </div>`;
 };
 
