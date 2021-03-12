@@ -29,7 +29,7 @@ https://github.com/hmparsons-sde/ASSIGNMENT-Firebase-Pinterest/projects/1
 - In order to view or manipulate content, the user must login using Google authentication. 
 - The landing page displays all of the user's boards and a navigation bar. From the navigation bar, the user can navigate to their favorite pins, a search bar with filter function, and to "Your Boards" and "Pins". By clicking on the Pinterest logo, the user will be directed to a page displaying all public content.
 - When a user clicks on a board's title, they are redirected to a single-board view, which displays all of the pins that the user has saved to the individual board.
-- Each pin and board display as a solid image. By hovering over the image, the user has access to the action buttons.
+- Each pin and board display as a solid image. By hovering over the image, the user has access to the social media buttons.
 - The user can create new pins and new boards.
 - The user can edit and delete existing pins and boards
 - For each pin, the title is hyperlinked to the associated external article or content.
