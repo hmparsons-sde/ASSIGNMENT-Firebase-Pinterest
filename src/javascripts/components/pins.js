@@ -1,6 +1,6 @@
 const showPins = (array) => {
   document.querySelector('#user-content').innerHTML = '';
-  document.querySelector('#add-button').innerHTML = '<button class="btn btn-danger btn-lg mb-4" id="add-pin-button">Create New Pin</button>';
+  document.querySelector('#add-button').innerHTML = '<button class="btn btn-danger btn-lg mb-4" id="add-pin-btn">Create New Pin</button>';
   document.querySelector('#form-container').innerHTML = '';
 
   array.forEach((pin) => {
