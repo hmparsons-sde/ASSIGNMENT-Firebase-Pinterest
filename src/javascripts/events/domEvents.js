@@ -28,6 +28,7 @@ const domEvents = (uid) => {
     }
     // TOGGLE CREATE PIN FORM
     if (e.target.id.includes('add-pin-btn')) {
+      e.preventDefault();
       formModal('Create New Pin');
       addPinForm();
       $('#formModal').modal('toggle');
@@ -62,6 +63,7 @@ const domEvents = (uid) => {
         image: document.querySelector('#image').value,
         article: document.querySelector('#article-url').value,
         favorite: document.querySelector('#favorite').checked,
+        public: document.querySelector('#public').checked,
         board_id: document.querySelector('#board').value,
         uid: firebase.auth().currentUser.uid
       };

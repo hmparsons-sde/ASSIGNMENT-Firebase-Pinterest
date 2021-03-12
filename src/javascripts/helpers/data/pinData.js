@@ -65,7 +65,7 @@ const getFavoritePins = () => new Promise((resolve, reject) => {
 // SEARCH PINS
 const searchPins = (uid, searchValue) => new Promise((resolve, reject) => {
   getPins(uid).then((response) => {
-    resolve(response.filter((element) => element.title.toLowerCase().includes(searchValue)));
+    resolve(response.filter((pin) => pin.title.toLowerCase().includes(searchValue)));
   })
     .catch((error) => reject(error));
 });

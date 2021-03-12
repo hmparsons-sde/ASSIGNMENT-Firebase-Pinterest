@@ -39,10 +39,10 @@ const navigationEvents = (uid) => {
   document.querySelector('#search').addEventListener('keyup', (e) => {
     const searchValue = document.querySelector('#search').value.toLowerCase();
     if (e.keyCode === 13) {
-      searchPins(uid, searchValue).then((array) => showPins(array));
+      searchPins(uid, searchValue).then((pins) => showPins(pins));
       document.querySelector('#search').value = '';
     }
   });
 };
-// WRITE SEARCH FUNCTION
+
 export default navigationEvents;
