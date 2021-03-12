@@ -47,27 +47,10 @@ const updateBoards = (firebaseKey, boardObject) => new Promise((resolve, reject)
         .catch((error) => reject(error));
     });
 });
-// GET FAVORITE BOARDS
-const getFavoriteBoards = () => new Promise((resolve, reject) => {
-  axios.get(`${dbUrl}/boards.json?orderBy="favorite"&equalTo=true`)
-    .then((response) => {
-      const favoriteBoardsArray = Object.values(response.data);
-      resolve(favoriteBoardsArray);
-    }).catch((error) => reject(error));
-});
-// SEARCH BOARDS
-const searchBoards = (uid, searchValue) => new Promise((resolve, reject) => {
-  getBoards(uid).then((response) => {
-    resolve(response.filter((board) => board.title.toLowerCase().includes(searchValue)));
-  })
-    .catch((error) => reject(error));
-});
 export {
   getBoards,
   deleteBoard,
   createBoard,
   getSingleBoard,
-  updateBoards,
-  getFavoriteBoards,
-  searchBoards
+  updateBoards
 };

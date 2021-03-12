@@ -5,6 +5,7 @@ const domBuilder = () => {
   <div class="user" id="user-greeting"></div>
   <br>
   <div class="mt-3 mb-2" id="add-button"></div>
+  <div class='board-title'></div>
       <div class="d-flex row pb-5 flex-wrap justify-content-evenly" id="user-content"></div>
       <div id="form-container"></div>
       <div id="edit-form-container"></div>

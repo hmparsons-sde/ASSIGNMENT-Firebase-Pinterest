@@ -1,5 +1,5 @@
-import { deleteBoard, getSingleBoard, searchBoards } from './boardData';
-import { deletePin, getBoardPins, searchPins } from './pinData';
+import { deleteBoard, getSingleBoard } from './boardData';
+import { deletePin, getBoardPins } from './pinData';
 
 // DELETE ALL THE PINS BELONGING TO A SPECIFIED BOARD
 const deleteBoardsPins = (boardId, uid) => new Promise((resolve, reject) => {
@@ -19,16 +19,15 @@ const boardsAndPins = (boardId) => new Promise((resolve, reject) => {
 });
 
 // SHOW PINS & BOARDS IN SEARCH RESULTS
-const searchBoardsPins = (uid, searchValue) => new Promise((resolve, reject) => {
-  const pin = searchPins(uid, searchValue);
-  const board = searchBoards(uid, searchValue);
-  Promise.all([pin, board])
-    .then(([pinResponse, boardResponse]) => resolve({ pin: pinResponse, board: boardResponse }))
-    .catch((error) => reject(error));
-});
+// const searchBoardsPins = (uid, searchValue) => new Promise((resolve, reject) => {
+//   const pin = searchPins(uid, searchValue);
+//   const board = searchBoards(uid, searchValue);
+//   Promise.all([pin, board])
+//     .then(([pinResponse, boardResponse]) => resolve({ pin: pinResponse, board: boardResponse }))
+//     .catch((error) => reject(error));
+// });
 
 export {
   boardsAndPins,
   deleteBoardsPins,
-  searchBoardsPins
 };

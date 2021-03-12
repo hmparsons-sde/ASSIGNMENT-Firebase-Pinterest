@@ -1,7 +1,7 @@
 import { emptyBoards, showBoards } from '../components/boards';
 import { emptyPins, showPins } from '../components/pins';
 import signOut from '../helpers/auth/signOut';
-import { getBoards, getFavoriteBoards } from '../helpers/data/boardData';
+import { getBoards } from '../helpers/data/boardData';
 import {
   getFavoritePins, getPins, publicPins, searchPins
 } from '../helpers/data/pinData';
@@ -48,16 +48,16 @@ const navigationEvents = (uid) => {
       }
     });
   });
-  // SEPARATE FAVORITE TAG
-  document.querySelector('#favorites').addEventListener('click', () => {
-    getFavoriteBoards().then((favoriteBoardsArray) => {
-      if (favoriteBoardsArray.length) {
-        showBoards(favoriteBoardsArray);
-      } else {
-        emptyBoards();
-      }
-    });
-  });
+  // // SEPARATE FAVORITE TAG
+  // document.querySelector('#favorites').addEventListener('click', () => {
+  //   getFavoriteBoards().then((favoriteBoardsArray) => {
+  //     if (favoriteBoardsArray.length) {
+  //       showBoards(favoriteBoardsArray);
+  //     } else {
+  //       emptyBoards();
+  //     }
+  //   });
+  // });
   // SEARCH BAR
   document.querySelector('#search').addEventListener('keyup', (e) => {
     const searchValue = document.querySelector('#search').value.toLowerCase();
