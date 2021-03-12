@@ -1,11 +1,22 @@
-import { emptyBoards, showBoards } from '../components/boards';
-import { emptyPins, showPins } from '../components/pins';
+import { emptyBoards, showBoards, showSearchedBoards } from '../components/boards';
+import { emptyPins, showPins, showSearchedPins } from '../components/pins';
 import signOut from '../helpers/auth/signOut';
-import { getBoards } from '../helpers/data/boardData';
-import { getFavoritePins, getPins, searchPins } from '../helpers/data/pinData';
+import { getBoards, getFavoriteBoards } from '../helpers/data/boardData';
+import { searchBoardsPins } from '../helpers/data/boardsAndPins';
+import { getFavoritePins, getPins, publicPins } from '../helpers/data/pinData';
 
 const navigationEvents = (uid) => {
   document.querySelector('#logout-button').addEventListener('click', signOut);
+  // SHOW PUBLIC CONTENT
+  document.querySelector('#public').addEventListener('click', () => {
+    publicPins().then((pinsArray) => {
+      if (pinsArray.length) {
+        showPins(pinsArray);
+      } else {
+        emptyPins();
+      }
+    });
+  });
   // SHOW ALL BOARDS
   document.querySelector('#all-boards').addEventListener('click', () => {
     getBoards(uid).then((boardsArray) => {
@@ -36,11 +47,25 @@ const navigationEvents = (uid) => {
       }
     });
   });
+  // SEPARATE FAVORITE TAG
+  document.querySelector('#favorites').addEventListener('click', () => {
+    getFavoriteBoards().then((favoriteBoardsArray) => {
+      if (favoriteBoardsArray.length) {
+        showBoards(favoriteBoardsArray);
+      } else {
+        emptyBoards();
+      }
+    });
+  });
+  // SEARCH BAR
   document.querySelector('#search').addEventListener('keyup', (e) => {
     const searchValue = document.querySelector('#search').value.toLowerCase();
     if (e.keyCode === 13) {
-      searchPins(uid, searchValue).then((pins) => showPins(pins));
-      document.querySelector('#search').value = '';
+      searchBoardsPins(uid, searchValue).then((pinBoardsObject) => {
+        showSearchedBoards(pinBoardsObject.board);
+        showSearchedPins(pinBoardsObject.pin);
+        document.querySelector('#search').value = '';
+      });
     }
   });
 };

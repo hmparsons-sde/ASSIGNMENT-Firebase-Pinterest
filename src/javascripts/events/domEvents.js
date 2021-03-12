@@ -1,7 +1,7 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import { showBoards } from '../components/boards';
-import { createBoard } from '../helpers/data/boardData';
+import { createBoard, getSingleBoard, updateBoards } from '../helpers/data/boardData';
 import addBoardForm from '../components/forms/newBoardForm';
 import {
   createPin, deletePin, getSinglePin, updatePin
@@ -15,6 +15,7 @@ import { boardsAndPins, deleteBoardsPins } from '../helpers/data/boardsAndPins';
 import editFormModal from '../components/forms/editFormModal';
 // eslint-disable-next-line import/no-cycle
 import logoutButton from '../components/buttons/logoutButton';
+import editBoardForm from '../components/forms/editBoardForm';
 
 const domEvents = (uid) => {
   document.querySelector('body').addEventListener('click', (e) => {
@@ -103,6 +104,26 @@ const domEvents = (uid) => {
         showPins(boardPinsObject.pins);
         boardInfo(boardPinsObject.board);
       });
+    }
+    // TOGGLE EDIT BOARD FORM
+    if (e.target.id.includes('edit-board')) {
+      const firebaseKey = e.target.id.split('--')[1];
+      editFormModal('Edit Board');
+      getSingleBoard(firebaseKey).then((boardObject) => editBoardForm(boardObject));
+      $('#formModal').modal('toggle');
+    }
+    // EDIT BOARDS FORM SUBMIT
+    if (e.target.id.includes('update-board')) {
+      const firebaseKey = e.target.id.split('--')[1];
+      e.preventDefault();
+      const boardObject = {
+        title: document.querySelector('#title').value,
+        image: document.querySelector('#image').value,
+        favorite: document.querySelector('#favorite').checked,
+        uid: firebase.auth().currentUser.uid
+      };
+      updateBoards(firebaseKey, boardObject).then((boardsArray) => showBoards(boardsArray));
+      $('#formModal').modal('toggle');
     }
     if (e.target.id === 'logout-button') {
       logoutButton();
