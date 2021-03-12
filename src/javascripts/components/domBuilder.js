@@ -1,5 +1,6 @@
 const domBuilder = () => {
   document.querySelector('#app').innerHTML = `<div id='navigation'></div>
+  <div class="header" id="header"></div>
   <div id='main-container' style='padding-top: 50px;'>
     <div class='row'>
       <div class="col-4">

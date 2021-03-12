@@ -10,7 +10,11 @@ const showBoards = (array) => {
       <img src='${item.cover_photo}' id='card-img'></img>
         <a href="#" id="title"><h5 id="board-title--${item.firebaseKey}" class="card-title mt-2 text-center">${item.title}</h5></a>
         <div class="text-center">
-        <button class="btn btn-light" id="delete-board--${item.firebaseKey}"><i class='fas fa-trash-alt' style='font-size:36px'></i></button>
+        <button class="btn btn-danger btn-lg mb-4" id="edit-board--${item.firebaseKey}">Edit</button>
+        <button class="btn btn-danger btn-lg mb-4" id="delete-board--${item.firebaseKey}">Delete</button>
+        </div>
+        <div="card-text">
+        <p class="card-text mb-2"><span class="badge">${item.favorite ? "<i class='fas fa-star' style='font-size:24px'></i>" : ''}</span><span class="badge">${item.public ? "<i class='fas fa-globe-americas ml-1' style='font-size:24px'></i>" : ''}</span></p>
         </div>
         </div>
     </div>`;
