@@ -69,5 +69,5 @@ export {
   getSingleBoard,
   updateBoards,
   getFavoriteBoards,
-  searchBoards,
+  searchBoards
 };

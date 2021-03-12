@@ -1,9 +1,10 @@
-import { emptyBoards, showBoards, showSearchedBoards } from '../components/boards';
-import { emptyPins, showPins, showSearchedPins } from '../components/pins';
+import { emptyBoards, showBoards } from '../components/boards';
+import { emptyPins, showPins } from '../components/pins';
 import signOut from '../helpers/auth/signOut';
 import { getBoards, getFavoriteBoards } from '../helpers/data/boardData';
-import { searchBoardsPins } from '../helpers/data/boardsAndPins';
-import { getFavoritePins, getPins, publicPins } from '../helpers/data/pinData';
+import {
+  getFavoritePins, getPins, publicPins, searchPins
+} from '../helpers/data/pinData';
 
 const navigationEvents = (uid) => {
   document.querySelector('#logout-button').addEventListener('click', signOut);
@@ -61,11 +62,8 @@ const navigationEvents = (uid) => {
   document.querySelector('#search').addEventListener('keyup', (e) => {
     const searchValue = document.querySelector('#search').value.toLowerCase();
     if (e.keyCode === 13) {
-      searchBoardsPins(uid, searchValue).then((pinBoardsObject) => {
-        showSearchedBoards(pinBoardsObject.board);
-        showSearchedPins(pinBoardsObject.pin);
-        document.querySelector('#search').value = '';
-      });
+      searchPins(uid, searchValue).then((array) => showPins(array));
+      document.querySelector('#search').value = '';
     }
   });
 };

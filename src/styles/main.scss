@@ -26,6 +26,7 @@ h2 {
 
 .nav-link {
   color: #6f7379;
+  font-weight: 700;
 }
 
 .search-container {
@@ -36,8 +37,53 @@ h2 {
 
 img {
   align-content: center;
-  height: 350px;
+  height: auto;
   width: 250px;
+}
+
+.pin-container, .board-container {
+  position: relative;
+  width: 50%;
+}
+
+.top {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:#CACACA;
+  color: #251617;
+  font-weight: 700;
+}
+
+.pin-container:hover .top {
+  opacity: 0.3;
+}
+
+.pin-container:hover .middle {
+  opacity: 1;
+}
+
+.board-container:hover .top {
+  opacity: 0.3;
+}
+
+.board-container:hover .middle {
+  opacity: 1;
 }
 
 i {
