@@ -52,3 +52,5 @@ https://github.com/hmparsons-sde/ASSIGNMENT-Firebase-Pinterest/projects/1
 @hmparsons-sde
 
 # LOOM VIDEO WALKTHROUGH
+
+https://www.loom.com/share/eabdd5f2d51e45389dbadf9c5958de40
