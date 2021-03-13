@@ -91,7 +91,7 @@ const domEvents = (uid) => {
       const boardObject = {
         title: document.querySelector('#title').value,
         cover_photo: document.querySelector('#image').value,
-        article: document.querySelector('#article').value,
+        favorite: document.querySelector('#favorite').checked,
         uid: firebase.auth().currentUser.uid
       };
       createBoard(boardObject, uid).then((boardsArray) => showBoards(boardsArray));

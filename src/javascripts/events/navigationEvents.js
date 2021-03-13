@@ -1,5 +1,5 @@
 import { emptyBoards, showBoards } from '../components/boards';
-import { emptyPins, showPins } from '../components/pins';
+import { emptyPins, showPins, showPublicPins } from '../components/pins';
 import signOut from '../helpers/auth/signOut';
 import { getBoards } from '../helpers/data/boardData';
 import {
@@ -12,7 +12,7 @@ const navigationEvents = (uid) => {
   document.querySelector('#public').addEventListener('click', () => {
     publicPins().then((pinsArray) => {
       if (pinsArray.length) {
-        showPins(pinsArray);
+        showPublicPins(pinsArray);
       } else {
         emptyPins();
       }

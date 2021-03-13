@@ -7,18 +7,13 @@ const dbUrl = firebaseConfig.databaseURL;
 // GET THE BOARDS
 const getBoards = (uid) => new Promise((resolve, reject) => {
   axios.get(`${dbUrl}/boards.json?orderBy="uid"&equalTo="${uid}"`)
-    .then((response) => {
-      if (response.data) {
-        const boardsArray = Object.values(response.data);
-        resolve(boardsArray);
-      } else {
-        resolve([]);
-      }
-    }).catch((error) => reject(error));
+    .then((response) => resolve(Object.values(response.data)))
+    .catch((error) => reject(error));
 });
+
 // DELETE THOSE BOARDS
 const deleteBoard = (firebaseKey, uid) => new Promise((resolve, reject) => {
-  axios.delete(`${dbUrl}/boards/${firebaseKey}.json `)
+  axios.delete(`${dbUrl}/boards/${firebaseKey}.json`)
     .then(() => getBoards(uid).then((boardsArray) => resolve(boardsArray)))
     .catch((error) => reject(error));
 });
@@ -42,10 +37,8 @@ const getSingleBoard = (firebaseKey) => new Promise((resolve, reject) => {
 // UPDATE A BOARD'S INFO IN REAL TIME
 const updateBoards = (firebaseKey, boardObject) => new Promise((resolve, reject) => {
   axios.patch(`${dbUrl}/boards/${firebaseKey}.json`, boardObject)
-    .then(() => {
-      getBoards(firebase.auth().currentUser.uid).then((boardsArray) => resolve(boardsArray))
-        .catch((error) => reject(error));
-    });
+    .then(() => getBoards(firebase.auth().currentUser.uid)).then((boardsArray) => resolve(boardsArray))
+    .catch((error) => reject(error));
 });
 export {
   getBoards,
