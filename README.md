@@ -41,7 +41,6 @@ https://github.com/hmparsons-sde/ASSIGNMENT-Firebase-Pinterest/projects/1
 # FEATURE LIST
 - User Authentication
 - Full-cycle CRUD
-- Detailed screen-reader content
 - Components & Modules
 
 # SCREENSHOTS
